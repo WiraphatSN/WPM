@@ -4,24 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zPleum's Profile</title>
-
+    
     <link rel="stylesheet" href="assets/css/style.css">
+
     <link rel="icon" type="image" href="assets/img/zpleum_zero.png">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-
-    <div id="copySec">คัดลอกสำเร็จ!</div>
+    <div id="copySec" class="notification">คัดลอกสำเร็จ!</div>
+    <div id="copySoon" class="notification">พบกันเร็วๆนี้!</div>
     
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
@@ -35,36 +30,64 @@
         </div>
 
         <div class="links">
-            <a href="https://web.mc-zero.net" target="_blank" class="link"><i class="fa-solid fa-globe"></i> | My Website</a>
-            <a href="https://github.com/WiraphatSN" target="_blank" class="link"><i class="fa-brands fa-github"></i> | My GitHub</a>
-            <a onclick="zCopy('zPleum_#4163')" class="link"><i class="fa-brands fa-discord"></i> | My Discord</a>
-            <a href="https://www.facebook.com/profile.php?id=61552804948437" target="_blank" class="link"><i class="fa-brands fa-facebook"></i> | My Facebook</a>
+            <a href="https://web.mc-zero.net" target="_blank" class="link">
+                <i class="fa-solid fa-globe"></i>
+                <span>My Website</span>
+            </a>
+            <a href="https://github.com/WiraphatSN" target="_blank" class="link">
+                <i class="fa-brands fa-github"></i>
+                <span>My GitHub</span>
+            </a>
+            <a onclick="zCopy('zPleum_#4163')" class="link">
+                <i class="fa-brands fa-discord"></i>
+                <span>My Discord</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61552804948437" target="_blank" class="link">
+                <i class="fa-brands fa-facebook"></i>
+                <span>My Facebook</span>
+            </a>
         </div>
 
         <div class="social-links">
             <a onclick="zCopy('wiraphat.makwong@gmail.com')" class="social-link">WIRAPHAT.MAKWONG@GMAIL.COM</a>
             <a href="https://web.mc-zero.net/team.html#zeroteam" target="_blank" class="social-link">MC-ZERO.NET</a>
         </div>
-    </div>
-    <div class="ft">
+
         <footer>
-            <div class="contents">
-                <div class="icons">
-                    <div class="copy" onclick="zCopy('MC-ZERO.NET')">
-                        <a><i class="fa-solid fa-gamepad"></i>| MC-ZERO.NET</a>
-                    </div>
-                    <a href="https://store.mc-zero.net" target="_blank"><i class="fa-solid fa-basket-shopping"></i></a>
-                    <a href="https://discord.gg/M4ebeqX3r4" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                    <a href="https://facebook.com/ZeroW0rld" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a onclick="zCopy('พบกันเร็วๆนี้!')"><i class="fa-brands fa-tiktok"></i></a>
-                    <a class="support" onclick="zCopy('0654571069 (TrueMoney Wallet)')"><i class="fa-solid fa-heart"></i>สนับสนุนเรา</a>
+            <div class="footer-content">
+                <img src="assets/img/zero.png" alt="ZERO">
+                <div class="footer-icons">
+                    <a onclick="zCopy('MC-ZERO.NET')" class="footer-icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </a>
+                    <a href="https://store.mc-zero.net" target="_blank" class="footer-icon">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                    <a href="https://discord.gg/M4ebeqX3r4" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://facebook.com/ZeroW0rld" target="_blank" class="footer-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a onclick="zSoon()" class="footer-icon">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a onclick="zCopy('0654571069 (TrueMoney)')" class="support-button">
+                        <i class="fa-solid fa-heart"></i> สนับสนุนเรา
+                    </a>
                 </div>
-                <div class="text">
-                    <p>© 2024 zPleum. All Right Reserved.</p>
+            </div>
+            <div class="footer-text">
+                <p>เราไม่มีส่วนเกี่ยวข้องกับ Mojang AB. © 2024 Mc Zero. All Right Reserved.</p>
+                <a href="https://wpm-elna.onrender.com" style="text-decoration: none; color: white;">
                     <p>Web Developer : zPleum | Contact Dev : zPleum_#4163</p>
-                </div>
+                </a>
             </div>
         </footer>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
